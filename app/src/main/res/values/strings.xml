@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MemoryMaster</string>
+
+    <string name="memory_master">MemoryMaster</string>
+    <string name="score">0</string>
+    <string name="owner">Alucard</string>
+    <string name="start">start</string>
+</resources>
