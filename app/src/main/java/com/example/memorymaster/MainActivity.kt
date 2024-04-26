@@ -10,7 +10,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.view.forEach
 import androidx.lifecycle.lifecycleScope
 import com.example.memorymaster.databinding.ActivityMainBinding
-import com.example.memorymaster.databinding.ActivityStartBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
