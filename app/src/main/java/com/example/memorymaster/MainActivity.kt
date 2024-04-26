@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(),OnClickListener{
     }
     private fun loseAnimation(){
         binding.apply {
-            score = 0;
+            score = 0
             tvScore.text = "0"
             disableButtons()
             val drawableLose = ActivityCompat.getDrawable(this@MainActivity,R.drawable.btn_lose)
