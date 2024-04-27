@@ -21,6 +21,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:text="@string/subTitle"
+        android:textColor="@color/btn_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,12 +51,12 @@
     <com.google.android.material.button.MaterialButton
 
         android:id="@+id/btnStart"
+        android:includeFontPadding="false"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="@string/start"
         android:layout_marginHorizontal="50dp"
-        android:textSize="40sp"
-        android:fontFamily="@font/sf_pro_text_medium"
+        android:textSize="50sp"
         app:cornerRadius="19dp"
         android:backgroundTint="@color/btn_red"
         app:layout_constraintTop_toTopOf="parent"

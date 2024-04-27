@@ -1,7 +1,10 @@
 package com.example.memorymaster
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Button
@@ -23,6 +26,7 @@ class MainActivity : AppCompatActivity(),OnClickListener{
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)  //diff
         setContentView(binding.root)
+
         //initViews
         binding.apply {
             panel1.setOnClickListener(this@MainActivity)
