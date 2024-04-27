@@ -5,5 +5,7 @@
     <string name="score">0</string>
     <string name="owner">Alucard</string>
     <string name="start">start</string>
-    <string name="subTitle">Unlock Your Yellow Memory</string>
+    <string name="subTitle">Unlock Your Golden Memory</string>
+    <string name="highestScore">0</string>
+
 </resources>

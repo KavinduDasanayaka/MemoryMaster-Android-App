@@ -16,7 +16,7 @@
         android:fontFamily="@font/sf_pro_text_heavy"
         android:text="@string/memory_master"
         android:textColor="@color/white"
-        android:textSize="29sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,56 +26,78 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
         android:drawablePadding="5dp"
         android:fontFamily="@font/sf_pro_text_bold"
         android:text="@string/subTitle"
         android:textColor="@color/btn_yellow"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAppName" />
 
 
     <TextView
+        android:id="@+id/HightestScoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/owner"
+        android:layout_marginTop="108dp"
+        android:layout_marginRight="140dp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="Highest score:"
+        android:textColor="@color/btn_yellow"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStart" />
+
+    <TextView
+        android:id="@+id/HightestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="@string/highestScore"
+        android:textColor="@color/btn_red"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStart" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/sf_pro_text_medium"
+        android:text="@string/owner"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
 
         android:id="@+id/btnStart"
-        android:includeFontPadding="false"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:text="@string/start"
+        android:layout_width="375dp"
+        android:layout_height="84dp"
         android:layout_marginHorizontal="50dp"
-        android:textSize="50sp"
-        app:cornerRadius="19dp"
         android:backgroundTint="@color/btn_red"
-        app:layout_constraintTop_toTopOf="parent"
         android:elevation="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        android:includeFontPadding="false"
+        android:text="@string/start"
+        android:textSize="60sp"
+        app:cornerRadius="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
