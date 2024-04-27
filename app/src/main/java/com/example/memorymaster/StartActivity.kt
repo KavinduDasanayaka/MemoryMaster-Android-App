@@ -4,9 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.memorymaster.databinding.ActivityStartBinding
-import android.content.Context.MODE_PRIVATE
-import android.content.SharedPreferences
-
 
 
 class StartActivity : AppCompatActivity() {
