@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)       //Instead of findViewById
         setContentView(binding.root)
 
         scoreViewModel = ViewModelProvider(this).get(ScoreViewModel::class.java)
@@ -65,9 +65,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         disableButtons()
         lifecycleScope.launch {
             val round = (3..5).random()
-            repeat(round) {
+            repeat(round) {            //repeat round number of times
                 delay(400)
-                val randomPanel = (1..4).random()
+                val randomPanel = (1..4).random()      //randomPanel get what view should turn yellow
                 result += randomPanel
                 val panel = when (randomPanel) {
                     1 -> binding.panel1
@@ -110,6 +110,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         }
     }
 
+    //Check Correct Answer
     override fun onClick(view: View) {
         view.let {
             userAnswer += when (it.id) {
@@ -119,9 +120,19 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                 R.id.panel4 -> "4"
                 else -> ""
             }
+
             if (userAnswer == result) {
                 Toast.makeText(this@MainActivity, "WIN", Toast.LENGTH_SHORT).show()
                 scoreViewModel.increaseScore() // Increase score when user wins
+
+
+                //Check whether current value passed Highest score
+                val currentScore: Int? = scoreViewModel.score.value
+                val lastSavedScore = loadScore()
+                if (currentScore.toString() == (lastSavedScore + 1).toString()) {
+                    Toast.makeText(this@MainActivity, "YoU hAVE ThE hIGHEST sCORE!!!", Toast.LENGTH_LONG).show()
+                }
+
                 startGame()
             } else if (userAnswer.length >= result.length) {
                 loseAnimation()

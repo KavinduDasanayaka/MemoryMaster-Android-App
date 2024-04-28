@@ -12,92 +12,76 @@
         android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/sf_pro_text_heavy"
         android:text="@string/memory_master"
-        android:textColor="@color/white"
+        android:textColor="@color/btn_white"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="35dp"
-        android:drawablePadding="5dp"
-        android:fontFamily="@font/sf_pro_text_bold"
-        android:text="@string/subTitle"
-        android:textColor="@color/btn_yellow"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
 
+    <!--        app:layout_constraintHorizontal_bias="0.568"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btnStart" />-->
+
+    <!--        app:layout_constraintHorizontal_bias="0.591"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btnStart" />-->
 
     <TextView
         android:id="@+id/HightestScoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="140dp"
         android:fontFamily="@font/sf_pro_text_heavy"
         android:text="@string/highest_score"
-        android:textColor="@color/btn_yellow"
+        android:textColor="@color/btn_red"
         android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnStart" />
+        app:layout_constraintTop_toTopOf="@+id/tvAppName"
+        app:layout_constraintVertical_bias="0.465"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/HightestScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
         android:fontFamily="@font/sf_pro_text_heavy"
         android:text="@string/highestScore"
-        android:textColor="@color/btn_red"
+        android:textColor="@color/btn_yellow"
         android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnStart" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/sf_pro_text_medium"
-        android:text="@string/owner"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/HightestScoreText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.button.MaterialButton
 
         android:id="@+id/btnStart"
-        android:layout_width="375dp"
-        android:layout_height="84dp"
+        android:layout_width="300dp"
+        android:layout_height="103dp"
         android:layout_marginHorizontal="50dp"
-        android:backgroundTint="@color/btn_red"
+        android:backgroundTint="#D32F2F"
         android:elevation="5dp"
         android:includeFontPadding="false"
         android:text="@string/start"
-        android:textSize="60sp"
-        app:cornerRadius="70dp"
+        android:textColor="#FAFBFD"
+        android:textSize="70sp"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.515" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
